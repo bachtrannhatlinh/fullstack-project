@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build and Test Full Stack Project",
+			"type": "shell",
+			"command": "cd backend && npm install && npm run build && echo 'Backend build successful!' && cd ../frontend && npm install && npm run build && echo 'Frontend build successful!' && echo 'Full project build completed successfully!'",
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc",
+				"$eslint-stylish"
+			]
+		}
+	]
+}

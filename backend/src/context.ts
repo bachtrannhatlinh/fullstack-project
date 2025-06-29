@@ -29,6 +29,7 @@ export async function createContext({ req }: { req: any }): Promise<Context> {
 
   return {
     user,
+    db, // Mock database for development
     prisma: null, // Will be initialized with actual PrismaClient later
     mongodb: null, // Will be initialized with MongoDB connection later
     redis: null, // Will be initialized with Redis client later
