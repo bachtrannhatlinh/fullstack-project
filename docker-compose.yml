@@ -1,0 +1,93 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15
+    container_name: financial_postgres
+    environment:
+      POSTGRES_DB: financial_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - financial_network
+
+  # MongoDB Database
+  mongodb:
+    image: mongo:6
+    container_name: financial_mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: financial_docs
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - financial_network
+
+  # Redis for caching
+  redis:
+    image: redis:7-alpine
+    container_name: financial_redis
+    ports:
+      - "6379:6379"
+    networks:
+      - financial_network
+
+  # Backend API
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: financial_backend
+    environment:
+      NODE_ENV: development
+      PORT: 4000
+      DATABASE_URL: postgresql://postgres:password@postgres:5432/financial_db
+      MONGODB_URL: mongodb://admin:password@mongodb:27017/financial_docs?authSource=admin
+      REDIS_URL: redis://redis:6379
+      JWT_SECRET: your_jwt_secret_key
+    ports:
+      - "4000:4000"
+    depends_on:
+      - postgres
+      - mongodb
+      - redis
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    networks:
+      - financial_network
+
+  # Frontend App
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: financial_frontend
+    environment:
+      REACT_APP_API_URL: http://localhost:4000/graphql
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - financial_network
+
+volumes:
+  postgres_data:
+  mongodb_data:
+
+networks:
+  financial_network:
+    driver: bridge

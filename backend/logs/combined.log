@@ -1,0 +1,37 @@
+{"level":"info","message":"Connecting to PostgreSQL...","service":"financial-backend","timestamp":"2025-06-29T07:54:40.325Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"financial-backend","timestamp":"2025-06-29T07:54:40.328Z"}
+{"level":"info","message":"Connecting to Redis...","service":"financial-backend","timestamp":"2025-06-29T07:54:40.329Z"}
+{"level":"info","message":"All databases connected successfully","service":"financial-backend","timestamp":"2025-06-29T07:54:40.329Z"}
+{"level":"info","message":"🚀 Server ready at http://localhost:4000/graphql","service":"financial-backend","timestamp":"2025-06-29T07:54:40.392Z"}
+{"level":"info","message":"📊 Health check at http://localhost:4000/health","service":"financial-backend","timestamp":"2025-06-29T07:54:40.392Z"}
+{"level":"info","message":"Connecting to PostgreSQL...","service":"financial-backend","timestamp":"2025-06-29T07:57:02.058Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"financial-backend","timestamp":"2025-06-29T07:57:02.062Z"}
+{"level":"info","message":"Connecting to Redis...","service":"financial-backend","timestamp":"2025-06-29T07:57:02.063Z"}
+{"level":"info","message":"All databases connected successfully","service":"financial-backend","timestamp":"2025-06-29T07:57:02.063Z"}
+{"level":"info","message":"🚀 Server ready at http://localhost:4000/graphql","service":"financial-backend","timestamp":"2025-06-29T07:57:02.148Z"}
+{"level":"info","message":"📊 Health check at http://localhost:4000/health","service":"financial-backend","timestamp":"2025-06-29T07:57:02.149Z"}
+{"level":"info","message":"Connecting to PostgreSQL...","service":"financial-backend","timestamp":"2025-06-29T08:02:33.692Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"financial-backend","timestamp":"2025-06-29T08:02:33.695Z"}
+{"level":"info","message":"Connecting to Redis...","service":"financial-backend","timestamp":"2025-06-29T08:02:33.696Z"}
+{"level":"info","message":"All databases connected successfully","service":"financial-backend","timestamp":"2025-06-29T08:02:33.696Z"}
+{"level":"info","message":"🚀 Server ready at http://localhost:4000/graphql","service":"financial-backend","timestamp":"2025-06-29T08:02:33.756Z"}
+{"level":"info","message":"📊 Health check at http://localhost:4000/health","service":"financial-backend","timestamp":"2025-06-29T08:02:33.756Z"}
+{"level":"info","message":"Connecting to PostgreSQL...","service":"financial-backend","timestamp":"2025-06-29T08:02:44.008Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"financial-backend","timestamp":"2025-06-29T08:02:44.011Z"}
+{"level":"info","message":"Connecting to Redis...","service":"financial-backend","timestamp":"2025-06-29T08:02:44.011Z"}
+{"level":"info","message":"All databases connected successfully","service":"financial-backend","timestamp":"2025-06-29T08:02:44.012Z"}
+{"level":"info","message":"🚀 Server ready at http://localhost:4000/graphql","service":"financial-backend","timestamp":"2025-06-29T08:02:44.067Z"}
+{"level":"info","message":"📊 Health check at http://localhost:4000/health","service":"financial-backend","timestamp":"2025-06-29T08:02:44.067Z"}
+{"level":"info","message":"Connecting to PostgreSQL...","service":"financial-backend","timestamp":"2025-06-29T08:03:03.108Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"financial-backend","timestamp":"2025-06-29T08:03:03.111Z"}
+{"level":"info","message":"Connecting to Redis...","service":"financial-backend","timestamp":"2025-06-29T08:03:03.112Z"}
+{"level":"info","message":"All databases connected successfully","service":"financial-backend","timestamp":"2025-06-29T08:03:03.112Z"}
+{"level":"info","message":"🚀 Server ready at http://localhost:4000/graphql","service":"financial-backend","timestamp":"2025-06-29T08:03:03.170Z"}
+{"level":"info","message":"📊 Health check at http://localhost:4000/health","service":"financial-backend","timestamp":"2025-06-29T08:03:03.171Z"}
+{"level":"info","message":"Connecting to PostgreSQL...","service":"financial-backend","timestamp":"2025-06-29T08:05:01.082Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"financial-backend","timestamp":"2025-06-29T08:05:01.085Z"}
+{"level":"info","message":"Connecting to Redis...","service":"financial-backend","timestamp":"2025-06-29T08:05:01.085Z"}
+{"level":"info","message":"All databases connected successfully","service":"financial-backend","timestamp":"2025-06-29T08:05:01.085Z"}
+{"level":"info","message":"🚀 Server ready at http://localhost:4000/graphql","service":"financial-backend","timestamp":"2025-06-29T08:05:01.154Z"}
+{"level":"info","message":"📊 Health check at http://localhost:4000/health","service":"financial-backend","timestamp":"2025-06-29T08:05:01.155Z"}
+{"level":"info","message":"User registered successfully: sieutromkid1325@gmail.com","service":"financial-backend","timestamp":"2025-06-29T08:05:33.840Z"}
